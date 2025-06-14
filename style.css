@@ -12,11 +12,16 @@ body{
 }
 
 nav{
-    margin: 10px;
     padding: 10px;
-    border-radius: 15px;
-    background-color: black;
+    background-color: #212121;
     display: flex;
+}
+
+nav div{
+    display: flex;
+    gap: 10px;
+    margin-left: 2pc;
+    align-items: center;
 }
 
 #logo{
@@ -28,6 +33,7 @@ a{
     text-decoration: none;
 }
 
+
 a button{
     background-color: transparent;
     color: white;
@@ -38,27 +44,66 @@ a button{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-nav div{
+button:hover{
+    border: #5c0000 solid;
+    transform: scale(1.05);
+    
+}
+
+main{
+    height: 200vh;
+}
+
+#banner{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#banner:hover{
+    transform: scaleY(1.02);
+}
+
+#produtos{
     display: flex;
-    gap: 10px;
-    margin-left: 2pc;
-    align-items: center;
+    flex-wrap: wrap;
+    
 }
 
 .produto{
-    height: 5cm;
-    width: 5cm;
+    height: 10cm;
+    width: 7cm;
+    margin: 1px;
+    justify-items: center;
+    align-content: flex-start;
 }
 
 .produto:hover{
     transform: scale(1.05);
 }
-    
 
-.pd{
-    background-color: aqua;
+.imgproduto{
+    max-width: 100%;
+
 }
 
-.pd2{
-    background-color: red;
+
+.pd{
+    background-color: rgb(255, 255, 255);
+}
+
+
+footer{
+    background-color: rgb(255, 150, 0);
+    height: 50vh;
+}
+
+footer p{
+    align-items: baseline;
+}
+
+h1{
+    justify-items: center;
 }
